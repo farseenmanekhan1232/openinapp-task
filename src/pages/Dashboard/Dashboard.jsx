@@ -1,5 +1,4 @@
 import React from "react";
-import Tabs from "../../components/Tabs";
 
 import "./Dashboard.css";
 import {
@@ -16,6 +15,7 @@ import { Pie } from "react-chartjs-2";
 import BlackMenu from "../../components/BlackMenu";
 import Navigation from "../../components/Navigation";
 import { LineChart_ } from "../../components/Charts";
+import Tab from "../../components/Tab";
 
 ChartJS.register(ArcElement, tt);
 
@@ -79,7 +79,12 @@ const Dashboard = () => {
       <div className="white-partition">
         <div className="dashboard-header">
           <Navigation />
-          <div className="tabs">TABS</div>
+          <div className="tabs">
+            <Tab tab_name={"revenue"} />
+            <Tab tab_name={"transactions"} />
+            <Tab tab_name={"likes"} />
+            <Tab tab_name={"users"} />
+          </div>
         </div>
         <div className="activities-main">
           <div className="activities-nav">

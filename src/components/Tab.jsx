@@ -1,7 +1,7 @@
 import React from "react";
 
-export const Tabs = ({ content, icon_name }) => (
-  <div className="tab revenue">
+export const Tab = ({ content, icon_name, tab_name }) => (
+  <div className={`tab ${tab_name}`}>
     <div className="tab-icon-wrap">
       <icon_name className="tab-icon" />
     </div>
@@ -9,4 +9,4 @@ export const Tabs = ({ content, icon_name }) => (
   </div>
 );
 
-export default Tabs;
+export default Tab;
