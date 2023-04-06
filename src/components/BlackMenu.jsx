@@ -8,10 +8,26 @@ import { AiOutlineSetting } from "react-icons/ai";
 
 const BlackMenu = () => (
   <div className="black-menu">
-    <BlackMenuItem content="Dashboard" icon_name={AiOutlinePieChart} />
-    {/* <BlackMenuItem />
-    <BlackMenuItem />
-    <BlackMenuItem /> */}
+    <BlackMenuItem
+      content="Dashboard"
+      icon_name={<AiOutlinePieChart className="black-icon" />}
+    />
+    <BlackMenuItem
+      content="Transactions"
+      icon_name={<BsTags className="black-icon" />}
+    />
+    <BlackMenuItem
+      content="Schedules"
+      icon_name={<AiOutlinePieChart className="black-icon" />}
+    />
+    <BlackMenuItem
+      content="Users"
+      icon_name={<BiUserCircle className="black-icon" />}
+    />
+    <BlackMenuItem
+      content="Settings"
+      icon_name={<AiOutlineSetting className="black-icon" />}
+    />
   </div>
 );
 

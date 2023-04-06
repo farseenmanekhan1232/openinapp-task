@@ -1,12 +1,24 @@
-// import Auth from "./pages/auth/Auth";
 import Dashboard from "./pages/Dashboard/Dashboard";
-import "./App.css";
+import Auth from "./pages/auth/Auth";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Navigate,
+} from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <Dashboard />
-    </div>
+    <>
+      <Router>
+        <Routes>
+          <Route exact path="/signup" element={<Auth />} />
+          <Route exact path="/dashboard" element={<Dashboard />} />
+
+          <Route path="/" element={<Navigate to="/signup" replace />} />
+        </Routes>
+      </Router>
+    </>
   );
 }
 

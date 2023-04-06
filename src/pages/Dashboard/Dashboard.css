@@ -16,6 +16,7 @@
     border-radius: 20px;
 }
 
+
 .black-content{
     filter:invert(1);
     display:flex;
@@ -28,6 +29,10 @@
     margin:3rem;
     display: flex;
     align-items: center;
+}
+.black-menu-item:hover{
+    font-weight: 700;
+    cursor: pointer;
 }
 
 .black-icon{
@@ -50,9 +55,17 @@
 
 .profile-pic{
     clip-path: circle();
+    height:1.3rem;
 }
 .navigation .to-right{
     margin-left:auto;
+}
+.to-right{
+    width:3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .tabs{
@@ -91,6 +104,16 @@
     background:#DEE0EF;
 }
 
+.tab-content h3{
+    margin-top:0;
+    margin-bottom:0;
+}
+
+.tab-content h5{
+    margin-top:0;
+    margin-bottom:0;
+}
+
 
 .activities-main{
     background-color: white;
@@ -99,6 +122,31 @@
 }
 .activities-nav{
     margin-left:2rem;
+    display: flex;
+    align-items: center;
+}
+
+.activities-nav .legend{
+    display: flex;
+    flex-direction: row;
+    margin:0 0  0  auto;  
+    width:10rem; 
+}
+
+.activities-nav .legend .legend-item{
+    width:4rem;
+    margin:0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.activities-nav .legend .legend-item .circle{
+    height: 0.5rem;
+    width: 0.5rem;
+    margin-right:5px;
+    border-radius: 50%;
+    background-color: black;
 }
 
 
@@ -150,29 +198,36 @@
 
 .sche-time{
     color: #999999;
-    margin:0 2rem;
+    margin:0 2rem 0 8px;
 }
 
 .sche-title{
-    margin:0 2rem;
+    margin:0 2rem 0 8px;
 }
 .sche-loc{
     color: #999999;
-    margin:0 2rem;
+    margin:0 2rem 0 8px;
 }
 
 .sche-sec{
     margin:2px;
+    margin-top:1rem;
+    margin-bottom:1rem;
+    margin-left:0;
     display:flex;
     flex-direction: row;
     justify-content: flex-start;
+}
+
+.sche-sec-content{
+    margin:0;
 }
 
 .ver-line{
     width: 0px;
     height:2rem;
     border:2px solid rgb(1, 200, 1);
-    margin-left:3rem;
+    margin-left:2rem;
     margin-right:0;
 }
 

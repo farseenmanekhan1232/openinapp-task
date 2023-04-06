@@ -4,7 +4,7 @@ const Schedules = () => (
     <div className="schedules">
       <div className="sche-sec">
         <div className="ver-line"></div>
-        <div>
+        <div className="sche-sec-content">
           <h6 className="sche-title">Meeting with the suppliers from Kuta</h6>
           <h6 className="sche-time">14:00 - 15:00</h6>
           <h6 className="sche-loc">at Sunset Road</h6>
@@ -12,7 +12,7 @@ const Schedules = () => (
       </div>
       <div className="sche-sec">
         <div className="ver-line green"></div>
-        <div>
+        <div className="sche-sec-content">
           <h6 className="sche-title">Meeting with the suppliers from Kuta</h6>
           <h6 className="sche-time">14:00 - 15:00</h6>
           <h6 className="sche-loc">at Sunset Road</h6>
