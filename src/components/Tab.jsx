@@ -1,11 +1,11 @@
 import React from "react";
 
-export const Tab = ({ content, icon_name, tab_name }) => (
+export const Tab = ({ children, icon_name, tab_name }) => (
   <div className={`tab ${tab_name}`}>
     <div className="tab-icon-wrap">
-      <icon_name className="tab-icon" />
+      {icon_name className="tab-icon" }
     </div>
-    {content}
+    {children}
   </div>
 );
 
